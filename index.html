@@ -1,21 +1,162 @@
 <!DOCTYPE html>
 <html lang="zzx">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Theyalow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/lucidaSans/stylesheet.css">
+    <link rel="stylesheet" href="fonts/SegoeWP/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Asap/stylesheet.css">
+    <link rel="stylesheet" href="fonts/SegouUI/stylesheet.css">
 </head>
+
 <body>
-    <header class="page-header">
-        <nav class="nav">
-            <span class="nav-brand">THEYALOW</span>
-            <ul class="nav__list main-menu">
-                <li class="main-menu__item"><a href="" class="main-menu__link"></a></li>
-                <li class="main-menu__item"><a href="" class="main-menu__link"></a></li>
-                <li class="main-menu__item"><a href="" class="main-menu__link"></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrapper-outer">
+        <header class="page-header">
+            <nav class="nav">
+                <div class="nav__wrapper">
+                    <div class="nav__brand brand">
+                        <div class="brand__wrapper-logo brand">
+                            <img class="brand__image brand__image--sub" src="images/brand-logo-bottom.png" alt="">
+                            <img class="brand__image brand__image--sup" src="images/brand-logo-top.png" alt="">
+                        </div>
+                        <span class="brand__text">THEYALOW</span>
+                    </div>
+                    <ul class="nav__list main-menu">
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link main-menu__link--about">About us</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link main-menu__link--services">services</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link main-menu__link--contacts">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="page-main">
+
+            <section class="introduction introduction--main-page">
+                <h2 class="visually-hidden">Our latest cinemas!</h2>
+                <div class="introduction__wrap">
+                    <div class="introduction__wrapper slider slider--introduction">
+                        <figure class="introduction__video-wrapper slider__item">
+                            <video src="" class="introduction__video" poster="images/video-poster.png"></video>
+                            <figcaption class="introduction__text-wrapper">
+                                <h3 class="introduction__title">
+                                    <span class="introduction__top-text">The cool</span> <br>
+                                    <span class="introduction__text">The minimal</span>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <p class="introduction__togglers slider__toggles">
+                            <button class="introduction__toggle introduction__toggle--prev slider__toggle" type="button"
+                                aria-label="Prev">
+                                <img class="slider__image slider__image--left" src="images/controls-left.png" alt="">
+                            </button>
+                            <button class="introduction__toggle introduction__toggle-next slider__toggle" type="button"
+                                aria-label="Next">
+                                <img class="slider__image slider__image--right" src="images/controls-right.png" alt="">
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages">
+                <div class="advantages__wrapper">
+                    <h2 class="visually-hidden"></h2>
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <img class="advantages__image advantages__image--cloud" src="images/advantages-cloud.png"
+                                alt="" class="advantages__image">
+                            <p class="advantages__text advantages__text--cloud">better design</p>
+                        </li>
+                        <li class="advantages__item">
+                            <img class="advantages__image advantages__image--customise"
+                                src="images/advantages-customise.png" alt="" class="advantages__image">
+                            <p class="advantages__text advantages__text--customise">customise</p>
+                        </li>
+                        <li class="advantages__item">
+                            <img class="advantages__image advantages__image--free" src="images/advantages-free.png"
+                                alt="" class="advantages__image">
+                            <p class="advantages__text advantages__text--free">its free</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="events">
+                <h2 class="visually-hidden"></h2>
+                <div class="events__wrapper">
+                    <h3 class="events__title">Lorem ipsum dolor sit amet</h3>
+                    <ul class="announcement slider">
+                        <li class="slider__item">
+                            <div class="announcement__wrapper">
+                                <p class="announcement__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut
+                                    <span class="small-plus"></span>
+                                </p>
+                                <video src="" class="announcement__video"></video>
+                                <time class="announcement__date" datetime="2019-04-25">
+                                    <b class="announcement__day">25</b> april
+                                </time>
+                            </div>
+                            <div class="announcement__socials social-comments">
+                                <a href="" class="social-comments__link">
+                                    <span class="social-comments__count"></span>
+                                    <span class="small-plus"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <p class="events__togglers slider__toggles">
+                            <button class="slider__toggle" type="button">Prev</button>
+                            <button class="slider__toggle" type="button">Next</button>
+                        </p>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="app">
+                <div class="app__wrapper">
+                    <figure class="app__desktop">
+                        <img src="" alt="" class="app__image app__image--desktop">
+                        <span class="app__discount"></span>
+                    </figure>
+                    <figure class="app__tablet">
+                        <img src="" alt="" class="app__image app__image--tablet">
+                    </figure>
+                    <figure class="app__desktop">
+                        <img src="" alt="" class="app__image app__image--phone">
+                    </figure>
+                    <ul class="app__list product-list">
+                        <li class="product-list"></li>
+                        <li class="product-list"></li>
+                        <li class="product-list"></li>
+                        <li class="product-list"></li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+        <footer class="page-footer">
+            <div class="brand__wrapper">
+                <div class="brand">
+                    <div class="brand__wrapper-logo brand">
+                        <img class="brand__image brand__image--sub" src="images/brand-logo-bottom.png" alt="">
+                        <img class="brand__image brand__image--sup" src="images/brand-logo-top.png" alt="">
+                    </div>
+                    <span class="brand__text">THEYALOW</span>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
