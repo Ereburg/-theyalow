@@ -121,7 +121,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #9b7d08;
-    background-color: #ffd501;
+    background-color: #f5c506;
 }
 
 .main-menu__link::before {
@@ -195,9 +195,21 @@
 }
 
 .introduction__video-wrapper {
+    position: relative;
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+}
+
+.introduction__video-wrapper::before {
+    position: absolute;
+    z-index: 100;
+    top: 130px;
+    left: 275px;
+    content: '';
+    width: 67px;
+    height: 67px;
+    transform: translate(-50%);
+    background: url('images/video-play.png') center no-repeat;
+    background-size: contain;
 }
 
 .introduction__video {
@@ -254,10 +266,12 @@
 
 .introduction__toggle--prev {
     left: 0;
+    background-color: #c39f0a;
 }
 
 .introduction__toggle-next {
     right: 0;
+    background-color: #f5c506;
 }
 
 .slider__image--left {
@@ -363,6 +377,7 @@
 .events {
     background: url('images/background-section.png') center no-repeat;
     padding-top: 40px;
+    border-bottom: 1px solid transparent;
 }
 
 .events__wrapper {
@@ -372,7 +387,6 @@
 }
 
 .events__title {
-    /* margin-top: 43px; */
     margin-bottom: 32px;
     font-family: 'PT Sans', sans-serif;
     font-size: 37px;
@@ -383,33 +397,270 @@
     color: #fff;
 }
 
-/* .announcement {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 .announcement__wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 341px 315px 363px;
+    grid-template-rows: 233px 86px;
+    font-family: 'Segoe WP';
 }
+
 .announcement__description {
-    width: 341px;
-    height: 233px;
+    position: relative;
+    padding: 18px 32px 25px 30px;
+    font-size: 29px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: .05px;
+    background-color: #ec9e03;
+}
+
+.small-plus {
+    position: absolute;
+    bottom: 7px;
+    right: 14px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.announcement__video {
+    position: relative;
+}
+
+.announcement__video::after {
+    position: absolute;
+    top: 93px;
+    left: 50%;
+    content: '';
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%);
+    background: url('images/video-play.png') center no-repeat;
+    background-size: contain;
+}
+
+
+.announcement__socials {
+    position: relative;
+    margin-left: 34px;
+    background: url('images/twitter.png') 83px 59px no-repeat,
+        #ec9e03;
+
+}
+
+.social-comments__link {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-comments__count {
+    position: absolute;
+    top: 16px;
+    right: 19px;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.social-comments .small-plus {
+    right: 9px;
+}
+
+.announcement__date {
+    width: 112px;
+    font-family: 'Segoe UI';
+    padding: 7px 24px 9px 29px;
+    background-color: #ddb101;
+}
+
+.announcement__day {
+    display: block;
+    font-size: 51px;
+    line-height: 1;
+    color: #fff;
+}
+
+.announcement__month {
+    position: relative;
+    top: 1px;
+    left: 2px;
+    font-size: 21px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #b26529;
+}
+
+.events__togglers {
+    position: relative;
+    left: 10px;
+    margin: 44px auto;
+    margin-bottom: 21px;
+    max-width: 896px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+}
+
+.events__togglers .slider__toggle {
+    position: relative;
+    left: 248px;
+    width: 197px;
+    height: 15px;
+    border: none;
+    line-height: 1;
+    background-color: #ec9e03;
+    border-radius: 10px;
 }
 
 /* Events end */
 
 /* App */
+.app {
+    padding-top: 38px;
+    background-color: #4c4c4c;
+    padding-bottom: 100px;
+}
 
 .app__wrapper {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1020px;
     width: 100%;
 }
 
+.app__title {
+    margin-bottom: 40px;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 43px;
+    font-weight: normal;
+    color: #f5c506;
+    letter-spacing: .05px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.app__wrapper-outer {
+    display: flex;
+    align-items: center;
+}
+
+.device__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 18px;
+    padding-top: 2px;
+}
+
+.app__desktop {
+    position: relative;
+}
+
+.app__image--tablet {
+    position: relative;
+    top: 1px;
+    margin-right: 25px;
+    margin-left: 24px;
+}
+
+.app__image--phone {
+    position: relative;
+    top: 56px;
+}
+
+.app__list {
+    position: relative;
+    top: 44px;
+    left: 3px;
+    max-width: 383px;
+    margin-left: 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: rgb(169, 169, 167);
+    line-height: 1.2;
+    list-style-type: none;
+    letter-spacing: .15px;
+}
+
+.product-list {
+    position: relative;
+    height: 100%;
+}
+
+.product-list__item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product-list__item::before {
+    position: absolute;
+    top: 0%;
+    left: -33px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #f5c506;
+    border-radius: 50%;
+    transform: translateY(50%)
+}
+
+.app__discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -43px;
+    left: -20px;
+    width: 116px;
+    height: 116px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16.7px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #f5c506;
+    text-transform: uppercase;
+}
+
+
+
+
 /* App end */
+.page-footer {
+    padding-top: 6px;
+    background-color: #4c4c4c;
+    font-family: 'Lucida Sans';
+    font-size: 29px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.281);
+}
 
 .brand__wrapper {
     margin: 0 auto;
     max-width: 1020px;
     width: 100%;
+}
+
+.page-footer .brand__text {
+    position: relative;
+    top: 2px;
+    left: 1px;
+    color: #ffffff;
+    letter-spacing: .05px;
+    font-size: 29px;
+}
+
+.page-footer  .brand__wrapper-logo {
+    width: 54px;
+    height: 54px;
+} 
+.page-footer .brand__image--sub {
+    top: 2%;
+    width: 51px;
+    height: 51px;
+}
+
+.page-footer .brand__image--sup {
+    width: 54px;
+    height: 54px;
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="fonts/SegoeWP/stylesheet.css">
     <link rel="stylesheet" href="fonts/Asap/stylesheet.css">
     <link rel="stylesheet" href="fonts/SegouUI/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +40,7 @@
                 </div>
             </nav>
         </header>
+        
         <main class="page-main">
 
             <section class="introduction introduction--main-page">
@@ -96,28 +98,29 @@
                 <div class="events__wrapper">
                     <h3 class="events__title">Lorem ipsum dolor sit amet</h3>
                     <ul class="announcement slider">
-                        <li class="slider__item">
-                            <div class="announcement__wrapper">
-                                <p class="announcement__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut
-                                    <span class="small-plus"></span>
-                                </p>
-                                <video src="" class="announcement__video"></video>
-                                <time class="announcement__date" datetime="2019-04-25">
-                                    <b class="announcement__day">25</b> april
-                                </time>
-                            </div>
+                        <li class="announcement__wrapper slider__item">
+                            <p class="announcement__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor inci-didunt ut
+                                <span class="small-plus">+</span>
+                            </p>
+                            <figure class="announcement__video">
+                                <video src="" poster="images/video-poster-section.png">Video doesn't supports by your
+                                    browser</video>
+                            </figure>
                             <div class="announcement__socials social-comments">
                                 <a href="" class="social-comments__link">
-                                    <span class="social-comments__count"></span>
-                                    <span class="small-plus"></span>
+                                    <span class="social-comments__count">22</span>
+                                    <span class="small-plus">+</span>
                                 </a>
                             </div>
+                            <time class="announcement__date" datetime="2019-04-25">
+                                <b class="announcement__day">25</b>
+                                <span class="announcement__month">april</span>
+                            </time>
                         </li>
                         <p class="events__togglers slider__toggles">
-                            <button class="slider__toggle" type="button">Prev</button>
-                            <button class="slider__toggle" type="button">Next</button>
+                            <button class="slider__toggle" type="button"></button>
                         </p>
                     </ul>
                 </div>
@@ -125,26 +128,33 @@
 
             <section class="app">
                 <div class="app__wrapper">
-                    <figure class="app__desktop">
-                        <img src="" alt="" class="app__image app__image--desktop">
-                        <span class="app__discount"></span>
-                    </figure>
-                    <figure class="app__tablet">
-                        <img src="" alt="" class="app__image app__image--tablet">
-                    </figure>
-                    <figure class="app__desktop">
-                        <img src="" alt="" class="app__image app__image--phone">
-                    </figure>
-                    <ul class="app__list product-list">
-                        <li class="product-list"></li>
-                        <li class="product-list"></li>
-                        <li class="product-list"></li>
-                        <li class="product-list"></li>
-                    </ul>
+                    <h3 class="app__title">Lorem ipsum dolor sit amet</h3>
+                    <div class="app__wrapper-outer">
+                        <div class="device__wrap">
+                            <figure class="app__desktop">
+                                <img class="app__image app__image--desktop" src="images/desctop.png" alt="">
+                                <span class="app__discount">ITS 100% free</span>
+                            </figure>
+                            <figure class="app__tablet">
+                                <img class="app__image app__image--tablet" src="images/tablet.png" alt="">
+                            </figure>
+                            <figure class="app__desktop">
+                                <img class="app__image app__image--phone" src="images/phone-image.png" alt="">
+                            </figure>
+                        </div>
+                        <ul class="app__list product-list">
+                            <li class="product-list__item">Sed ut perspiciatis unde omnis</li>
+                            <li class="product-list__item">Lorem ipsum dolor sit amet, con-sectetur adipisicing </li>
+                            <li class="product-list__item">Sed ut perspiciatis unde omnis</li>
+                            <li class="product-list__item">Lorem ipsum dolor sit amet, con-sectetur adipisicing </li>
+                        </ul>
+                    </div>
+
                 </div>
             </section>
 
         </main>
+
         <footer class="page-footer">
             <div class="brand__wrapper">
                 <div class="brand">
